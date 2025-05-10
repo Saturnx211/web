@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(to right, #ffd6e0, #ffeacc);
+    text-align: center;
+    color: #444;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+     height: 100vh;
+    overflow: hidden; /* Esto asegura que los globos no salgan del área visible */
+      
+  }
+
+  /* Globos en el fondo */
+.balloons {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1; /* Asegura que los globos estén por debajo del contenido */
+    pointer-events: none; /* Para que no interfieran con otros elementos */
+  }
+  
+  .balloon {
+    top: 70px;
+    width: 5px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    animation: float 6s infinite ease-in-out;
+  }
+  
+  .balloon:nth-child(1) {
+    top: 70px;
+    right: -420px;
+    animation-delay: 0s;
+  }
+  
+  .balloon:nth-child(2) {
+    top: 70px;
+    right: -300px;
+    animation-delay: 1s;
+  }
+  
+  .balloon:nth-child(3) {
+    top: 70px;
+    right: 400px;
+    animation-delay: 2s;
+  }
+  
+  .balloon:nth-child(4) {
+    top: 70px;
+    right: 590px;
+
+    animation-delay: 3s;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-50px) rotate(10deg);
+    }
+    100% {
+      transform: translateY(0) rotate(0deg);
+    }
+  }
+  
+  /* Contenido de la página */
+  .content {
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté por encima de los globos */
+    padding-top: 100px; /* Para que el contenido no esté pegado al borde superior */
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #333;
+  }
+  
+  p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .container {
+    padding: 30px;
+  }
+  
+  h1 {
+    font-size: 3em;
+    color: #ff6694;
+    animation: bounce 2s infinite;
+  }
+
+  .boton {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 20px;
+    transition: all 0.3s;
+}
+  
+  button {
+   border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .gallery img {
+    margin: 10px;
+    border-radius: 15px;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.1);
+  }
+  
+  .phrases p {
+    font-style: italic;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0);}
+    50% { transform: translateY(-10px);}
+  }
+
+  

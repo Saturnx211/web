@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Feliz Cumpleaños uwu</title>
+</head>
+<body>
+
+      <!-- Globos de fondo -->
+  <div class="balloons">
+    <div class="balloon"><img src="./images/sonic-.png" width="150px" alt=""></div>
+    <div class="balloon"><img src="./images/balloon.png" width="150px" alt=""></div>
+    <div class="balloon"><img src="./images/balloon.png" width="150px" alt=""></div>
+    <div class="balloon"><img src="./images/fearless-tab-shadow.png" width="280px" alt=""></div>
+  </div>
+  
+    <div class="container">
+        <h1>¡Feliz Cumpleaños Lili!</h1>
+        
+      
+          <!-- Reproductor de audio (reproducción automática al cargar) -->
+    <audio id="cancion" src="./music/Nessa Barrett - STAY ALIVE  (official lyric video).mp3" autoplay></audio>
+  </div>
+
+        
+    
+    
+        <!-- Galería de fotos -->
+        <div class="gallery">
+          <img src="./images/sha.png" width="150px" alt="foto 1" />
+          <img src="./images/uwu.png" width="700px" alt="foto 2" />
+          <img src="./images/shadowwwwwww.png" width="200px" alt="foto 3" />
+        </div>
+        <br>
+        <br>
+        <br>
+              
+
+      <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+    
+<script>
+  // Confeti automático al cargar la página
+  window.onload = () => {
+    confetti({
+      particleCount: 150,
+      spread: 70,
+      origin: { y: 0.6 }
+    });
+  };
+  window.onload = () => {
+      // Configura el volumen de la música
+      document.getElementById('cancion').volume = 0.2; // 20% del volumen máximo
+  }
+</script>
+<button onclick="confetti({ particleCount: 200, spread: 90, origin: { y: 0.6 } })">
+    <img src="./images/shadow.gif" alt="">
+  </button>
+  <p>Presiona al shadow para más confeti uwu</p>
+      <!-- Confeti JS -->
+      <script src="./actiones.js"></script>
+
+</body>
+</html>
